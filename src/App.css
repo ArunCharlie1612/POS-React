@@ -1,0 +1,613 @@
+/* .App {
+  text-align: center;
+} */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* POS APP CSS */
+
+
+
+button:active{
+  border: 1px solid #000;
+}
+
+
+
+.main a {
+  background-color: #3d75a7;
+  opacity: 1;
+  cursor: pointer;
+}
+/* .main a:active{
+  border: 3px solid #000;
+} */
+
+.main a:hover {
+  opacity: 0.8;
+}
+.linkBox a{
+  height: 80px;
+  width: 200px;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+
+}
+
+/* Inventory Screen */
+
+
+
+
+.homeIcon {
+  color: #fff;
+  background-color: #3d75a7;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
+.update_btn {
+  display: none;
+}
+
+.success_btn {
+  background: seagreen;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.success_btn:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.formContent table tbody tr {
+  height: 50px;
+}
+
+.formContent table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.delete_black {
+  color: #000;
+}
+
+#tableInventoryData td {
+  height: 50px;
+  align-items: center;
+  padding: 2px 10px;
+  position: relative;
+}
+
+/* End Inventory Screen */
+
+
+
+/* Item Request Screen */
+.itemRequestFoCon {
+  min-height: 250px;
+}
+
+.item_err_ic {
+  color: red;
+  font-size: 15px;
+}
+
+
+
+
+/* End Item Request Screen */
+
+
+/* Billing(Main) Screen */
+.AddPartCalButton {
+  padding: 1px 5px;
+}
+
+.CustomerPart {
+  background-color: rgb(187, 247, 213);
+  padding: 10px;
+}
+
+.AddGridContainer {
+  display: grid;
+  grid-template-rows: 1/2 fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+#previous:active,#next:active{
+  border: 1px solid #000;
+}
+#previous,#next{
+  border:none;
+}
+
+.AddGridContainer button {
+  border: 1px solid #000;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.bg-green {
+  background-color: rgb(73, 218, 73);
+}
+
+.bg-orange {
+  background-color: rgb(240, 133, 51);
+}
+
+.bg-green:hover,
+.bg-orange:hover {
+  opacity: 0.9;
+  color: #000;
+}
+
+.item1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.item2 {
+  grid-area: 1 / 2 / 3 / 2;
+}
+
+.item3 {
+  grid-area: 1 / 3 / 3 / 4;
+}
+
+.item4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.item5 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.item6 {
+  grid-area: 1 / 6 / 3 / 7;
+}
+
+.item7 {
+  grid-area: 1 / 7 / 3 / 8;
+
+}
+
+.item8 {
+  grid-area: 2 / 1 /3 / 2;
+}
+
+.item9 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.item10 {
+  grid-area: 2 / 5 / 3 / 6;
+}
+
+.item11 {
+  grid-area: 3 / 1 / 5 / 2;
+}
+
+.item12 {
+  grid-area: 3 / 2 / 5 / 3;
+}
+
+.item13 {
+  grid-area: 3 / 3 / 5 / 4;
+}
+
+.item14 {
+  grid-area: 3 / 4 / 5 / 5;
+}
+
+.item15 {
+  grid-area: 3 / 5 / 4 / 6;
+}
+
+.item16 {
+  grid-area: 3 / 6 / 5 / 7;
+}
+
+.item17 {
+  grid-area: 3 / 7 / 5 / 8;
+}
+
+.item18 {
+  grid-area: 4 / 5 / 5 / 6;
+}
+
+
+.ImagePart {
+  min-height: 200px;
+}
+
+.InvoicePartID {
+  /* display: none; */
+  height: 260px;
+  overflow-y: scroll;
+}
+
+.InvoicePartID::-webkit-scrollbar {
+  display: none;
+}
+
+.BillInvoicePart {
+  /* display: none; */
+  /* position: absolute; */
+  height: 250px;
+}
+
+#payable {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  align-items: center;
+}
+
+
+.snacksMainDiv {
+  /* padding: 10px 20px; */
+  /* margin: 0px 20px; */
+  width: 120px;
+  /* overflow-y: scroll; */
+}
+.snacksMainDiv button{
+  height: 35px;
+  width: 85px;
+}
+.snacksMainDiv div{
+  width: 85px;
+  
+}
+.snacksMainDiv div button{
+  height: 80px;
+}
+.scrollingSnacksPart {
+  background-color: #cddeec;
+}
+
+.scrollingPart {
+  height: 178px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  transition: scroll-behavior 0.5s ease;
+  /* overflow-x:scroll */
+}
+
+.scrollingPart::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollingPart button {
+  background-color: #6090f7;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 11px 4px;
+  font-weight: 500;
+  width: 140px;
+  cursor: pointer;
+}
+
+#previous,
+#next {
+  padding: 5px 25px;
+  border: none;
+  background: #c7c3c3;
+  border: none;
+  border-radius: 3px;
+}
+
+#previous i,
+#next i {
+  font-size: 30px;
+}
+
+/* .drinksImageStyle{
+
+} */
+.DrinksSectionMainDiv,
+.billingLeftPart {
+  background-color: rgb(206, 206, 200);
+}
+
+.DrinksSection {
+  height: 260px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.DrinksSection::-webkit-scrollbar {
+  display: none;
+}
+
+.drinksImageDiv {
+  width: 120px;
+  height: 90px;
+  border: 1px solid blue;
+  padding: 2px 20px;
+  /* background-color: #000;
+  color: #fff; */
+  cursor: pointer;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.drinksImageDiv p {
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Billing Top Part */
+
+
+
+
+/* Billing End Top Part */
+
+
+
+/* Billing(Main) Screen */
+
+
+
+/* #CustomDateDiv {
+  display: none;
+} */
+
+
+
+/* Custom CSS for Input File Type */
+
+.custom-file-upload-hidden {
+  display: none;
+  visibility: hidden;
+
+}
+.custom-file-upload {
+  display: block;
+  width: auto;
+  font-size: 16px;
+}
+
+.custom-file-upload label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.file-upload-wrapper {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.file-upload-input {
+  width: 320px;
+  color: #000;
+  font-size: 16px;
+  padding: 7px 17px;
+  border: none;
+  background-color: #fff;
+  border: 1px solid gray;
+  /* border-radius: 10px; */
+  transition : all 0.2s ease-in;
+  float: left;  
+}
+
+.file-upload-button {
+  cursor: pointer;
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 7px 20px;
+  border: 1px solid #3d75a7;
+  margin-left: -1px;
+  background-color: #e6e9eb;
+  transition:(all 0.2s ease-in);
+}
+.file-upload-button:hover{
+  opacity: 0.7;
+  color: #000;
+}
+
+input[type="date"]{
+  /* background-color: #0080ff; */
+  background-color: #fff;
+  display: block;
+  padding: 2px 5px;
+  width: 100%;
+  position: relative;
+  /* transform: translate(-50%,-50%); */
+  font-family: "Roboto Mono",monospace;
+  color: #000;
+  font-size: 16px;
+  
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+
+
+/* Inventory Page select Option */
+
+.select-container {
+  display: flex;
+  position: relative;
+  gap: 2px;
+  padding: 8px 32px;
+  /* background-color: #fff; */
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 5px;
+  align-items: center;
+  /* justify-content: start; */
+}
+
+.hidden-select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;	
+}
+
+.hidden-select:hover {
+    cursor: pointer;
+}
+
+.hidden-select:hover .select-container {
+    transition: var(--transition-duration);
+    background-color: aqua;
+}
+
+.hidden-select option {
+    font-size: 16px;
+    line-height: 32px;
+    padding: 12px 0;
+}
+.select-container:hover{
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translate(5px,2px);
+  transition: 0.2s ease-in-out;
+
+}
+
+/* End Inventory Page select Option */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END POS CSS */
+
+
+
+.signup_btn,.login_btn{
+  width: 75px;
+  padding: 3px 8px;
+  font-size:15px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.exampleForm .formInputs{
+  padding: 2px;
+  font-size: 15px;
+  text-indent: 5px;
+  letter-spacing: 1.5px;
+}
+
+
+
+
+.Table_Main_Data thead th{
+  font-size: 13px;
+}
+.imgMainDiv{
+  width: 20%;
+}
+.DrinksItemName{
+  font-size: 10px;
+}
+#snackName,#snacksPart{
+  width: 85px;
+}
+#snackName{
+  font-size: 10px;
+  font-weight: 400;
+}
+.table>:not(caption)>*>*{
+  padding: 0px;
+}
+
+.mainSalesContent .salesTableContent table tbody tr{
+  height: 40px;
+}
